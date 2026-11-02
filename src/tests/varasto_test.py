@@ -14,12 +14,12 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(self.varasto.tilavuus, 10)
 
     def test_epakelvollinen_tilavuus_nollataan(self):
-        varasto = Varasto(0)
+        varasto = Varato(0)
 
         self.assertAlmostEqual(varasto.tilavuus, 0)
 
     def test_negatiivinen_alkusaldo_nollataan(self):
-        varasto = Varasto(10, -1)
+        varasto = Varato(10, -1)
 
         self.assertAlmostEqual(varasto.saldo, 0)
 
